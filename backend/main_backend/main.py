@@ -4,7 +4,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from database import engine
 from models import Base
 from routers import auth, admin, users
-
+from routers import company, employees, expenses, payroll, budgets, financial_insights
 app = FastAPI()
 
 
@@ -27,7 +27,12 @@ app.add_middleware(
 app.include_router(auth.router)
 app.include_router(admin.router)
 app.include_router(users.router)
-
+app.include_router(payroll.router)
+app.include_router(expenses.router)
+app.include_router(employees.router)
+app.include_router(budgets.router)
+app.include_router(financial_insights.router)
+app.include_router(company.router)
 
 # HEALTH CHECK 
 @app.get("/healthy")
