@@ -1,0 +1,27 @@
+/n_fastapienv/
+.idea/
+test.db
+# Virtual environment
+n_fastapienv/
+venv/
+env/
+
+# IDE and OS
+.idea/
+.vscode/
+.DS_Store
+
+# Python cache
+__pycache__/
+*.pyc
+.DS_Store
+
+# Databases
+*.db
+*.sqlite3
+
+# Environment variables
+.env
+
+# Alembic cache
+alembic/versions/*.pyc
