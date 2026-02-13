@@ -16,7 +16,7 @@ Base.metadata.create_all(bind=engine)
 # middleware CORS 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # For hackathon; restrict in production
+    allow_origins=["http://localhost:5173"],  # For hackathon; restrict in production
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

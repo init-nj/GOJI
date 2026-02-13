@@ -1,0 +1,24 @@
+{
+  "name": "hackathon",
+  "version": "1.0.0",
+  "description": "GOJI is an end-to-end AI-powered web application designed to streamline organizational expense tracking and payroll operations while delivering intelligent financial insights.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"cd backend/main_backend && uvicorn main:app --reload\" \"cd frontend && npm run dev\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/init-nj/GOJI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/init-nj/GOJI/issues"
+  },
+  "homepage": "https://github.com/init-nj/GOJI#readme",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
